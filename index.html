@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webáruház - Saját Név</title>
+  <!-- Bootstrap CSS CDN -->
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="module" src="index.js"></script>
+</head>
+<body>
+  <div class="container mt-4">
+    <header class="mb-4">
+      <h1>Webáruház</h1>
+    </header>
+    <!-- Szűrő és kereső rész -->
+    <section id="filter-section" class="mb-4">
+      <div class="form-row">
+        <div class="col-8">
+          <input type="text" id="searchInput" class="form-control" placeholder="Termék keresése név alapján">
+        </div>
+        <div class="col-4">
+          <button id="searchBtn" class="btn btn-primary btn-block">Keresés</button>
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <!-- Terméklista -->
+      <section id="product-list" class="col-md-8">
+        <h2>Termékek</h2>
+        <div id="products" class="row"></div>
+      </section>
+      <!-- Kosár -->
+      <section id="cart-section" class="col-md-4">
+        <h2>Kosár</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal" class="mt-2 font-weight-bold"></div>
+      </section>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS és függőségek -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
